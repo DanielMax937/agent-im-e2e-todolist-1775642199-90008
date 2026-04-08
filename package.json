@@ -2,7 +2,7 @@
   "name": "todolist-e2e",
   "version": "0.0.0",
   "private": true,
-  "description": "TC-HP-3291000 [HP] development queue smoke",
+  "description": "E2E todolist: TC-B1-5591000 blocking gate, TC-HP-3291000 HP dev queue smoke",
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage --coverageReporters=json-summary"
@@ -13,6 +13,8 @@
   "jest": {
     "testEnvironment": "node",
     "collectCoverageFrom": [
+      "lib/**/*.js",
+      "!lib/**/*.test.js",
       "src/**/*.js",
       "!src/**/*.test.js"
     ],
