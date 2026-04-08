@@ -1,0 +1,25 @@
+{
+  "name": "tc-b1-5591000",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TC-B1-5591000 [B1] 阻塞测试任务",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=json-summary",
+    "test:coverage": "jest --coverage --coverageReporters=json-summary"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "lib/**/*.js",
+      "!lib/**/*.test.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "json-summary",
+      "text"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
