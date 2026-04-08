@@ -1,0 +1,25 @@
+{
+  "name": "todolist-e2e",
+  "version": "0.0.0",
+  "private": true,
+  "description": "TC-HP-3291000 [HP] development queue smoke",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage --coverageReporters=json-summary"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "json-summary"
+    ]
+  }
+}
